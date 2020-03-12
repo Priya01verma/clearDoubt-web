@@ -3,11 +3,13 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/styles';
 import MuiTheme from './MuiTheme';
 import './App.css';
+import AllQuestion from './Screens/Question-Solution';
 
 function App() {
   return (
     <BrowserRouter>
-      <ThemeProvider theme={MuiTheme} >
+      <ThemeProvider theme={MuiTheme}>
+      <AllQuestion />
       </ThemeProvider>
     </BrowserRouter>
   );
