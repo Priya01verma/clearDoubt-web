@@ -2,7 +2,6 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import Theme from '../Resources/Theme';
 
 const defaultTheme = createMuiTheme();
-console.log({themeDataVslye: Theme});
 const onTablet = defaultTheme.breakpoints.only('sm');
 const onMobile = defaultTheme.breakpoints.only('xs');
 
@@ -12,17 +11,14 @@ const MuiTheme = createMuiTheme({
             main: Theme.Colors.Primary.main,
             contrastText: Theme.Colors.White
         },
-        // secondary: Theme.Colors.Secondary,
-        // error: {
-        //     main: Theme.Colors.Error
-        // },
-        // text: {
-        //     primary: Theme.Colors.Text.primary,
-        //     secondary: Theme.Colors.Text.secondary
-        // }
-        // primary:{
-        //     main: "#337ab7"
-        // }
+        secondary: Theme.Colors.Secondary,
+        error: {
+            main: Theme.Colors.Error
+        },
+        text: {
+            primary: Theme.Colors.Text.primary,
+            secondary: Theme.Colors.Text.secondary
+        }
     },
     typography: {
         fontFamily: [
@@ -55,7 +51,8 @@ const MuiTheme = createMuiTheme({
             fontSize: 32
         },
         h5: {
-            fontSize: 24
+            fontSize: 20,
+            fontWeight: "bold"
         },
         h6: {
             fontSize: 20,
