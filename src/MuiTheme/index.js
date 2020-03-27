@@ -55,9 +55,10 @@ const MuiTheme = createMuiTheme({
             fontWeight: "bold"
         },
         h6: {
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: 'normal',
-            lineHeight: '24px'
+            lineHeight: '32px',
+            color: '#333',
         },
         subtitle1: {
             fontSize: 16,
